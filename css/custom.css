@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+nav {
+    margin-top: 1.1rem;
+    display: flex;
+    gap: 1.1rem;
+}
+
+nav > a {
+    font-size: 1.1rem;
+}

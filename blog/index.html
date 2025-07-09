@@ -6,6 +6,63 @@
         <link rel="stylesheet" href="../css/tufte.css"/>
         <link rel="stylesheet" href="../css/custom.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+         .post-list {
+             list-style: none;
+             width: 85%;
+             padding-left: 0;
+             padding-right: 15%;
+             margin-top: 3rem;
+         }
+
+         .post-list-item {
+             display: flex;
+             justify-content: space-between;
+             align-items: flex-start;
+             gap: 2rem; /* space between text and date */
+             padding-bottom: 1.5rem;
+             margin-bottom: 1.5rem;
+             border-bottom: 1px dotted #b3b3b3;
+         }
+
+         .post-list-item:last-child {
+             border-bottom: none;
+             margin-bottom: 0;
+         }
+
+         .post-content {
+             flex: 1;
+         }
+
+         h2 {
+             font-style: italic;
+             font-weight: 400;
+             font-size: 1.7rem;
+             line-height: 1;
+         }
+
+         .post-title {
+             margin-top: 0;
+             margin-bottom: 0.7rem;
+         }
+
+         .post-title a {
+             text-decoration: none;
+         }
+         .post-title a:hover {
+             text-decoration: underline;
+         }
+
+         .post-excerpt {
+             margin: 0;
+             /* color: #333; */ /* breaks in dark theme */
+         }
+
+         .post-date {
+             white-space: nowrap; /* Prevents the date from wrapping */
+             /* color: #555; */ /* breaks in dark theme */
+         }
+        </style>
     </head>
 
     <body>
@@ -18,10 +75,58 @@
         </header>
 
         <main>
-            <h1 id="tufte-css">All Posts</h1>
-            <section>
-                <p>I like complexity.</p>
-            </section>
+            <h1>All Posts</h1>
+            <ul class="post-list">
+                <li class="post-list-item">
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">The Bottom Third</a></h2>
+                        <p class="post-excerpt">Success is a difficult thing to measure and foster. Good advisors help all of their students succeed.</p>
+                    </div>
+                    <time class="post-date" datetime="2020-04-08">08 Apr 2020</time>
+                </li>
+                <li class="post-list-item">
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">Managing my annotated bibliography with Emacs' Org Mode</a></h2>
+                        <p class="post-excerpt">Org mode is a fantastic tool for managing references. Here's a description of how I use it, and some additional packages, to manage my annotated bibliography.</p>
+                    </div>
+                    <time class="post-date" datetime="2020-03-31">31 Mar 2020</time>
+                </li>
+                <li class="post-list-item">
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">A Guide to My Organizational Workflow: How to Streamline Your Life</a></h2>
+                        <p class="post-excerpt">Detailed notes are needed to accomplish individual projects or tasks but not the big picture. Task lists and calendars focus on the big picture at the expense of detail. An effective organizational system requires both. This post gives a high-level overview of my Getting Things Done inspired organizational workflow.</p>
+                    </div>
+                    <time class="post-date" datetime="2020-03-22">22 Mar 2020</time>
+                </li>
+                <li class="post-list-item">
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">The Valley of AI Trust</a></h2>
+                        <p class="post-excerpt">Particularly for safety-critical applications or the automation of tasks that can directly impact quality of life, we must be careful to avoid the valley of AI trust—the dip in overall safety caused by premature adoption of automation.</p>
+                    </div>
+                    <time class="post-date" datetime="2020-03-13">13 Mar 2020</time>
+                </li>
+                <li class="post-list-item">
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">Talk figures are different from paper figures</a></h2>
+                        <p class="post-excerpt">One communication pitfall I often see is that many researchers will take figures from their papers and paste them into their slides. Here, I provide some tips for tailoring your figures to talks.</p>
+                    </div>
+                    <time class="post-date" datetime="2020-01-06">06 Jan 2020</time>
+                </li>
+                <li class="post-list-item">
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">Machine Learning & Robotics: My (biased) 2019 State of the Field</a></h2>
+                        <p class="post-excerpt">My thoughts on the past year of progress in Robotics and Machine Learning.</p>
+                    </div>
+                    <time class="post-date" datetime="2019-12-30">30 Dec 2019</time>
+                </li>
+                <li class="post-list-item">
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">Anyone sufficiently experienced is indistinguishable from a magician</a></h2>
+                        <p class="post-excerpt">Surrounded by brilliant people, I see my friends and colleagues produce surprising insights seemingly from thin air. Only through dedication to a craft can one gain the depth of understanding necessary to demonstrate this level of mastery.</p>
+                    </div>
+                    <time class="post-date" datetime="2019-10-31">31 Oct 2019</time>
+                </li>
+            </ul>
         </main>
     </body>
 </html>
